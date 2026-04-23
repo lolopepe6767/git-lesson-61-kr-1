@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/null.css">
+</head>
+<body>
+    <section class="feedback-section">
+        <div class="container">
+            <form class="feedback-form">
+                <h2>Обратная связь</h2>
+                <div class="forma">
+                    <p>Имя</p>
+                    <input type="text" name="username" placeholder="Иван Иванов" required>
+                </div>
+                <div class="forma">
+                    <p>Email</p>
+                    <input type="email" name="user_email" placeholder="example@mail.com" required>
+                </div>
+                <div class="forma">
+                    <p>Тип обращения</p>
+                    <select name="request_type">
+                        <option value="question">Вопрос</option>
+                        <option value="offer">Предложение</option>
+                        <option value="error">Ошибка</option>
+                    </select>
+                </div>
+                <div class="forma">
+                    <p>Сообщение</p>
+                    <textarea name="user_message" rows="4" placeholder="Ваш текст..."></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="./script.js"></script>
+</html>
